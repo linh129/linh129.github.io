@@ -11,10 +11,27 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 	<!--fontawesome-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
+	<link type="text/javascript">
+	<style>
+		#myBtn{
+			display: none;
+			position: fixed;
+			z-index: 99;
+			right: 40px;
+			bottom: 30px;
+			border: none;
+			background-color:lightblue;
+			outline: none;
+			opacity: 20%;
+		}
+	</style>
 </head>
 <body>
 <!--Nav-->
+	<button onClick="topFunction()" id="myBtn" title="On Top"><i class="fa fa-angle-double-up" aria-hidden="true"></i>
+</button>
 <nav class="navbar navbar-light bg-light">
   <div class="container"> 
 	  <a class="navbar-brand" href="#">ID: concobebe</a> <a class="btn btn-secondary" href="#">Sign In</a> </div>
@@ -46,21 +63,21 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-4">
-        <div class="features-icons-item">
+        <div class="features-icons-item" data-aos="fade-down">
           <div class="features-icons-icon"> <i class="fa fa-television" aria-hidden="true" ></i> </div>
           <h3>Fully</h3>
           <p class="lead mb-0">No matter the size!</p>
         </div>
       </div>
       <div class="col-lg-4">
-        <div class="features-icons-item">
+        <div class="features-icons-item" data-aos="fade-down">
           <div class="features-icons-icon"> <i class="fa fa-modx" aria-hidden="true"></i> </div>
           <h3> Ready</h3>
           <p class="lead mb-0">Featuring the latest!</p>
         </div>
       </div>
       <div class="col-lg-4">
-        <div class="features-icons-item">
+        <div class="features-icons-item" data-aos="fade-down">
           <div class="features-icons-icon"> <i class="fa fa-check" aria-hidden="true"></i> </div>
           <h3>Easy</h3>
           <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
@@ -73,23 +90,23 @@
 <section class="showcase">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/2467ffe3e1f45744e621108b0d56bd2a.jpg')"></div>
-      <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+      <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/2467ffe3e1f45744e621108b0d56bd2a.jpg')" data-aos="fade-left"></div>
+      <div class="col-lg-6 order-lg-1 my-auto showcase-text" data-aos="zoom-in">
         <h2>Fully Responsive Design</h2>
           <p class="lead mb-0 ">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively! When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/5fcfcb3dbd6ae7ba8ef0be13865f726a.gif');"></div>
-      <div class="col-lg-6 my-auto showcase-text">
+      <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/5fcfcb3dbd6ae7ba8ef0be13865f726a.gif');" data-aos="fade-right"></div>
+      <div class="col-lg-6 my-auto showcase-text" data-aos="zoom-in">
         <h2>Updated For Bootstrap 4</h2>
         <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
       </div>
     </div>
     <div class="row no-gutters">
-      <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/15c0a0fe8d63e2a5e7903249e73eac88.jpg')"></div>
-      <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+      <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/15c0a0fe8d63e2a5e7903249e73eac88.jpg')" data-aos="fade-left"></div>
+      <div class="col-lg-6 order-lg-1 my-auto showcase-text" data-aos="zoom-in">
         <h2>Easy to Use &amp; Customize</h2>
         <div class="scroll overflow-auto">
           <p class="lead mb-0 ">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
@@ -103,19 +120,19 @@
     <h2 class="mb-5">What people are feeling...</h2>
     <div class="row">
       <div class="col-lg-4">
-        <div class="testimonial-item mx-auto mb-5 mb-lg-0"> <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="testimon1">
+        <div class="testimonial-item mx-auto mb-5 mb-lg-0" data-aos="zoom-out-up"> <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="testimon1">
           <h5>Margaret E.</h5>
           <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
         </div>
       </div>
       <div class="col-lg-4">
-        <div class="testimonial-item mx-auto mb-5 mb-lg-0"> <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="testimon2">
+        <div class="testimonial-item mx-auto mb-5 mb-lg-0" data-aos="zoom-out-up"> <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="testimon2">
           <h5>Fred S.</h5>
           <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
         </div>
       </div>
       <div class="col-lg-4">
-        <div class="testimonial-item mx-auto mb-5 mb-lg-0"> <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="testimon3">
+        <div class="testimonial-item mx-auto mb-5 mb-lg-0" data-aos="zoom-out-up"> <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="testimon3">
           <h5>Sarah W.</h5>
           <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
         </div>
@@ -172,8 +189,33 @@
     </div>
   </div>
 </footer>
+	<script>
+	//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+	</script>
 <!--Bootstrap core JavaScript-->
 <script src="../../AppData/Local/Temp/vendor/jquery/jquery.min.js"></script>
 <script src="../../AppData/Local/Temp/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
