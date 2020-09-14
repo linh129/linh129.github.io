@@ -1,73 +1,156 @@
 @charset "utf-8";
 /* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
 body{
-	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif"
+	font-family: 'Gayathri', sans-serif;
+	background: #F4B4B5;
 }
-/*Masthead*/
-header.masthead{
-	background: url('../img/hinh-nen-may-tinh-don-gian-4.jpg');  
-	background-size:cover;
-	padding-top: 9rem;
-	padding-bottom: 9rem;
+.container{
+	width: 1400px;
+	height: 1400px;
+/*	background: #FB7D47;*/
+	overflow: hidden;
+}
+.header-main{
+	width: 1400px;
+	height: 1400px;
+/*	background: #F5AA2E;*/
+	padding: 20px 80px;
+	position: fixed;
+	z-index: 9999;
+}
+.logo{
+	font-weight: bolder;
+	line-height: 30px;
+	margin-left: 10px;
+	float: left;
+	display: block;
+/*	background: #CEF967;*/
+}
+.logo a{
+	font-family: 'Lobster', cursive;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+}
+.logo a:hover{
+	color: #000000;
+	transition: all 0.2s;
+}
+.menu{
+	float: right;
+	font-weight: normal;
+	margin-right: 250px;
+	padding: 0 50px;
+	display: block;
+/*	background: #19C0B5;*/
+}
+.menu ul li{
+	display: inline-block;
+/*	line-height: 30px;*/
+	padding-left: 50px;
+	position: relative;
+	left: 200px;
+}
+.menu ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
 	
 }
-header.masthead h1{
-	font-size: 2.5rem;
+.menu ul li a:hover{
+	color: black;
+	transition: all 0.2s;
 }
-header.masthead.overlay{
-	height: 100%;
-	weight: 100%;
-	border: 0;
+.text{
+	width: 1400px;
+	height: 1400px;
+/*	margin-top: -27px;*/
+	background: url(../img/13018578879239.5cb1ba2e53eb3.png);
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
-/*Icons Grid*/
-.features-icons{
-	padding-top: 7rem;
-	padding-bottom: 7rem;
+.text-home1{
+	color: white;
+	position: absolute;
+	top: 700px;
+	text-align: center;
+	width: 100%;
 }
-.features-icons .features-icons-item{
-	max-width: 20rem;
-}
-.features-icons .features-icons-item .features-icons-icon{
-	height: 7rem;
-}
-.features-icons .features-icons-item .features-icons-icon i{
+.text-home1 h1{
 	font-size: 80px;
+	font-weight: bold;
+}
+.text-home1 h1:hover{
+	color: #FB7D47;
+	transition: all 0.2s;
+}
+.about{
+	width: 1400px;
+	height: 1400px;
+	background: url(../img/5bb30f78879239.5cb1ba2e51dfb.png) no-repeat;
+/*	background-size: cover;*/
+/*	position: relative;*/
+/*	top: 100px;*/
+/*	z-index: 1;*/
 	
 }
-/*Image Showcases*/
-.showcase .showcase-text {
-    padding: 3rem;
+.text-about h3{
+	text-align: left;
+	font-size: 42px;
+	line-height: 80px;
+	font-weight: bold;
+	padding-left: 200px;
+	padding-top: 150px;
+	color: white;
 }
-.showcase .showcase-img {
-    min-height: 30rem;
+.text-about h6{
+	font-size: 22px;
+	font-weight: 300;
+	padding-left: 200px;
+	position: relative;
+	top: -10px;
+	color: white;
 }
-/*Testimonials*/
-.testimonials {
-    padding-top: 7rem;
-    padding-bottom: 7rem
+.text-about p{
+	font-size: 14px;
+	height: 300px;
+	width: 300px;
+	color: white;
+/*	background: #3AF933;*/
+	padding-left: 200px;
 }
-.testimonials .testimonial-item {
-    max-width: 18rem
-}
-.testimonials .testimonial-item img {
-    max-width: 12rem;
-    box-shadow: 0 5px 5px 0
-}
-/*Call to Action*/
-.call-to-action{
-	background: url('../img/hinh-nen-may-tinh-don-gian-4.jpg');  
-	background-size:cover;
-	padding-top: 8rem;
-	padding-bottom: 8rem;
+.portfolio{
+	width: 1400px;
+	height: 1400px;
+	background: url(../img/79e27078879239.5cb1ba2e52df2.png);
+/*	position: relative;*/
+/*	top: -10px;*/
+	background-repeat: no-repeat;
+/*	background-size: cover;*/
 	
 }
-.call-to-action .overlay{
-	height: 100%;
-	weight: 100%;
-	border: 0;
+.wrapper{
+	background: url(../img/6eb20478879239.5cb1ba2e53155.png) no-repeat;
+	width: 1400px;
+	height: 1400px;
 }
-/*Footer*/
-footer.footer {
-    padding-top: 4rem;
-    padding-bottom: 4rem
+.portfolio2{
+	background: url(../img/39b8e970442741.5ba3844f90676.png) no-repeat;
+	width: 1400px;
+	height: 1400px;
+}
+.portfolio3{
+	background: url(../img/44e63770442741.5ba3844f8f9c0.png) no-repeat;
+	width: 1400px;
+	height: 1400px;
+}
+.portfolio4{
+	background: url(../img/fa4a3678879239.5cb1ba2e541d0.png) no-repeat;
+	width: 1400px;
+	height: 1400px;
 }
